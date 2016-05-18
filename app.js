@@ -4,6 +4,10 @@ var port = process.env.PORT || 3000;
 var url = require('url');
 var students = require('./students');
 
+app.get('/',function(req,res){
+	res.json("Root page");
+});
+
 app.get('/StudentsList',function(req,res){
 	res.json(students.getAllStudents());
 });

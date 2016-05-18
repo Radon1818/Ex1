@@ -1,7 +1,7 @@
 var StudentsList = require('./students.json');
 
 exports.getAllStudents = function(){
-	return StudentsList.students[1].average;
+	return StudentsList;
 }
 
 exports.getStudentByAverage = function(average){
